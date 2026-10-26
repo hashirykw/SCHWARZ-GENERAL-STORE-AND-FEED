@@ -629,6 +629,39 @@ html:not(.js) .rv { opacity: 1; transform: none; }
 }
 .foot-base { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-5); padding-top: var(--space-6); border-top: var(--rule-hair) solid var(--color-night-rule); color: var(--color-on-night-2); font-size: var(--text-sm); }
 
+/* footer: full on desktop, compact on phones (about a third of a screen) */
+.foot-links { display: none; }
+.only-mob { display: none !important; }
+@media (max-width: 819px) {
+  .only-desk { display: none !important; }
+  .only-mob { display: block !important; }
+  .foot { padding-top: 22px; padding-bottom: 14px; }
+  .foot-mast { grid-template-columns: minmax(0, 1fr); gap: 0; padding-bottom: 12px; border-bottom: 3px double var(--color-night-rule); }
+  .foot-cta, .foot-cols { display: none; }
+  .foot-brand { gap: var(--space-3); }
+  .foot-brand img { width: 44px; height: 44px; }
+  .foot-word { font-size: 1.3rem; line-height: 1.05; }
+  .foot-word small { font-size: 0.66rem; letter-spacing: 0.12em; margin-top: 4px; }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 0 var(--space-4); padding-block: 6px; border-bottom: var(--rule-hair) solid var(--color-night-rule); }
+  .foot-links a { display: inline-block; padding-block: 7px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--color-on-night); }
+  .foot-base { padding-top: 10px; gap: 8px var(--space-3); border-top: 0; font-size: 0.72rem; padding-right: 64px; justify-content: flex-start; }
+  .only-desk-inline { display: none; }
+  .foot-base { align-items: center; }
+  .foot .nx { margin-left: auto; padding: 5px 5px 5px 9px; gap: 8px; border-radius: 8px; }
+  .foot .nx-logo { width: 16px; }
+  .foot .nx-text small { display: none; }
+  .foot .nx-text strong { font-size: 0.72rem; letter-spacing: 0.18em; }
+  .foot .nx-btn { padding: 7px 10px; font-size: 0.64rem; margin-left: 4px; }
+}
+
+@media (max-width: 374px) {
+  .foot-links { gap: 0 12px; }
+  .foot-links a { font-size: 0.76rem; letter-spacing: 0.02em; }
+  .foot-base { padding-right: 60px; }
+  .foot .nx { margin-left: 0; }
+  .foot-word small { font-size: 0.6rem; letter-spacing: 0.07em; }
+}
+
 /* Nexlyr credit strip */
 .nx { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3) var(--space-4); max-width: 100%; background: var(--color-nx-card); border: 1px solid var(--color-nx-line); border-radius: 10px; padding: 10px 10px 10px 14px; color: var(--color-nx-text); }
 .nx-logo { width: 26px; height: auto; flex: none; }
