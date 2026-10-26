@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Car Show & Events · Schwarz General & Feed · Lane, Kansas</title>
 <meta name="description" content="The annual car show at Schwarz General & Feed Store in Lane, Kansas. All makes, all models, all years, with vendors and food from Broken Wheel Scratch Kitchen.">
 <meta name="theme-color" content="#f3ecdc">
@@ -17,6 +17,7 @@
 <link rel="preload" href="/assets/fonts/libre-franklin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/styles.css">
 <script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/chat.js" defer></script>
 <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Store", "Restaurant"], "name": "Schwarz General & Feed Store", "alternateName": "Broken Wheel Scratch Kitchen", "description": "General store, feed store and scratch kitchen in Lane, Kansas.", "servesCuisine": "American, scratch-made comfort food", "foundingDate": "2025", "image": "/assets/img/storefront-1600.webp", "logo": "/assets/img/badge-400.webp", "address": {"@type": "PostalAddress", "streetAddress": "417 S Kansas Ave", "addressLocality": "Lane", "addressRegion": "KS", "postalCode": "66042", "addressCountry": "US"}, "sameAs": ["https://www.facebook.com/p/Schwarz-General-Feed-Store-61573037642657/", "https://www.instagram.com/schwarz_general_and_feed_store/"]}</script>
 </head>
@@ -25,7 +26,7 @@
 <div class="pl" aria-hidden="true">
   <div class="pl-frame"></div>
   <div class="pl-in">
-    <img class="pl-badge" src="/assets/img/badge-400.webp" width="168" height="168" alt="">
+    <img class="pl-badge" src="/assets/img/badge-400.webp" width="164" height="164" alt="">
     <p class="pl-word">Schwarz</p>
     <p class="pl-sub meta">General &amp; Feed Store &middot; Lane, Kansas</p>
     <div class="pl-bar"><span></span></div>
@@ -35,14 +36,16 @@
 <header class="bar">
   <div class="wrap bar-in">
     <a class="brand" href="/" aria-label="Schwarz General and Feed Store, home">
-      <img src="/assets/img/badge-160.webp" width="46" height="46" alt="">
+      <img src="/assets/img/badge-160.webp" width="42" height="42" alt="">
       <span class="brand-name">Schwarz<small>General &amp; Feed Store</small></span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Primary">
-      <ul><li><a href="/kitchen">Kitchen</a></li><li><a href="/store">The Store</a></li><li><a href="/events" aria-current="page">Car Show</a></li><li><a href="/visit">Visit</a></li><li class="nav-cta"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=417+S+Kansas+Ave,+Lane,+KS+66042" target="_blank" rel="noopener">Get directions</a></li></ul>
+      <ul><li><a href="/">Home<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></li><li><a href="/kitchen">Kitchen<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></li><li><a href="/store">The Store<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></li><li><a href="/events" aria-current="page">Car Show<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></li><li><a href="/visit">Visit<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></li></ul>
+      <div class="nav-cta"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=417+S+Kansas+Ave,+Lane,+KS+66042" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-pin"></use></svg>Get directions</a></div>
+      <p class="nav-foot">417 S Kansas Ave &middot; Lane, KS</p>
     </nav>
-    <a class="btn btn-sm bar-cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=417+S+Kansas+Ave,+Lane,+KS+66042" target="_blank" rel="noopener">Directions</a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <a class="btn btn-sm bar-cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=417+S+Kansas+Ave,+Lane,+KS+66042" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-pin"></use></svg>Directions</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span><span class="lbl">Menu</span></button>
   </div>
 </header>
 <main id="main">
@@ -59,13 +62,11 @@
   </div>
 </section>
 
-<section class="sec" style="padding-top:0">
+<section class="sec pt-0">
   <div class="wrap">
     <figure>
       <div class="ph keyline wide">
-        <video data-auto muted loop playsinline preload="none" poster="/assets/img/carshow-street-1280.webp" width="960" height="540" aria-label="Promo reel for the car show on South Kansas Avenue">
-          <source src="/assets/video/car-show.mp4" type="video/mp4">
-        </video>
+        <video data-auto muted loop playsinline preload="none" poster="/assets/img/carshow-street-1280.webp" width="960" height="540" aria-label="Promo reel for the car show on South Kansas Avenue"><source src="/assets/video/car-show.mp4" type="video/mp4"></video>
         <button class="vid-toggle" type="button">Pause</button>
       </div>
       <figcaption class="cap"><span class="meta">The promo</span>Rolling into Lane for the second annual show.</figcaption>
@@ -73,12 +74,27 @@
   </div>
 </section>
 
+<section class="sec sec-tint">
+  <div class="wrap"><article class="event-card">
+      <div class="ph"><img src="/assets/img/carshow-poster-1280.webp" srcset="/assets/img/carshow-poster-720.webp 720w, /assets/img/carshow-poster-1280.webp 1280w" sizes="(min-width: 900px) 50vw, 100vw" width="1280" height="720" alt="Poster for the Second Annual Car Show at Schwarz General and Feed Store, June 13, 2026" loading="lazy" decoding="async"></div>
+      <div class="event-body">
+        <div class="event-top">
+          <div class="date-block" aria-hidden="true"><span class="m meta">June</span><span class="d">13</span><span class="y">2026</span></div>
+          <div><span class="meta red">Second annual &middot; Gates 11:00 AM</span><h3>The Schwarz Car Show</h3></div>
+        </div>
+        <p>All makes, all models, all years. Vendors along the street, food from the kitchen all day, and fun for the whole family.</p>
+        <div class="chips"><span class="chip">Classic cars</span><span class="chip">Vendors</span><span class="chip">Food</span><span class="chip">Family</span></div>
+        <div class="cta-row"><a class="btn" href="/events">See the car show</a><a class="link" href="https://www.facebook.com/p/Schwarz-General-Feed-Store-61573037642657/" target="_blank" rel="noopener">Next date on Facebook<svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-arrow"></use></svg></a></div>
+      </div>
+    </article></div>
+</section>
+
 <section class="sec">
   <div class="wrap split">
     <div class="stack">
       <h2>Come for the cars. Stay for the memories.</h2>
-      <div class="prose">
-        <p>The second annual Schwarz car show filled South Kansas Avenue on June 13, 2026. All makes, all models, all years: muscle cars, hot rods, and the family sedan someone's grandpa kept perfect for fifty years.</p>
+      <div class="prose drop">
+        <p>The second annual Schwarz car show filled South Kansas Avenue on June 13, 2026. All makes, all models, all years: muscle cars, hot rods, and the family sedan somebody kept perfect for fifty years.</p>
         <p>Vendors set up along the street, Broken Wheel cooked all day, and it was fun for the whole family, start to finish.</p>
       </div>
       <dl class="facts-inline">
@@ -87,18 +103,12 @@
         <div><dt class="meta">Cars</dt><dd>All makes &amp; years</dd></div>
         <div><dt class="meta">Next show</dt><dd>Date coming soon</dd></div>
       </dl>
-      <div class="cta-row"><a class="btn" href="https://www.facebook.com/p/Schwarz-General-Feed-Store-61573037642657/" target="_blank" rel="noopener">Get the next date on Facebook</a></div>
     </div>
     <figure class="rv">
-      <div class="ph keyline poster"><img src="/assets/img/carshow-poster-1280.webp" srcset="/assets/img/carshow-poster-720.webp 720w, /assets/img/carshow-poster-1280.webp 1280w" sizes="(min-width: 900px) 45vw, 100vw" width="1280" height="720" alt="Poster for the Second Annual Car Show at Schwarz General and Feed Store, June 13, 2026" loading="lazy" decoding="async"></div>
-      <figcaption class="cap"><span class="meta">The poster</span>Second annual &middot; June 13, 2026.</figcaption>
+      <div class="ph keyline" style="aspect-ratio:16/9"><img src="/assets/img/carshow-street-1280.webp" srcset="/assets/img/carshow-street-720.webp 720w, /assets/img/carshow-street-1280.webp 1280w" sizes="(min-width: 900px) 45vw, 100vw" width="1280" height="720" alt="Classic cars parked along the street in front of the Schwarz storefront" loading="lazy" decoding="async"></div>
+      <figcaption class="cap"><span class="meta">Show day</span>Chrome on South Kansas Avenue. Bring yours next year.</figcaption>
     </figure>
   </div>
-</section>
-
-<section class="fold" aria-label="Cars on Main Street">
-  <figure class="ph rv"><img src="/assets/img/carshow-street-1280.webp" srcset="/assets/img/carshow-street-720.webp 720w, /assets/img/carshow-street-1280.webp 1280w" sizes="100vw" width="1280" height="720" alt="Classic cars parked along the street in front of the Schwarz storefront" loading="lazy" decoding="async"></figure>
-  <p class="fold-cap">Chrome on South Kansas Avenue. Bring yours next year.</p>
 </section>
 </main>
 <section class="night strip" aria-labelledby="strip-h">
@@ -134,7 +144,7 @@
       </div>
       <div>
         <h3>Follow</h3>
-        <ul><li><a href="https://www.facebook.com/p/Schwarz-General-Feed-Store-61573037642657/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/schwarz_general_and_feed_store/" target="_blank" rel="noopener">Instagram</a></li></ul>
+        <ul><li><a href="https://www.facebook.com/p/Schwarz-General-Feed-Store-61573037642657/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/schwarz_general_and_feed_store/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#chat" data-chat>Ask the counter</a></li></ul>
       </div>
     </div>
     <div class="foot-base">
@@ -147,5 +157,33 @@
     </div>
   </div>
 </footer>
+<button class="chat-launcher" type="button" aria-expanded="false" aria-controls="chat"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-chat"></use></svg><span class="lbl">Ask the counter</span><span class="dot" aria-hidden="true"></span><span class="vh">Open chat</span></button>
+<section class="chat" id="chat" role="dialog" aria-label="Ask the counter" aria-hidden="true" inert>
+  <div class="chat-head">
+    <img src="/assets/img/badge-160.webp" width="36" height="36" alt="">
+    <div class="t"><strong>Ask the counter</strong><small>Schwarz General &amp; Feed</small></div>
+    <button class="chat-x" type="button" aria-label="Close chat"><svg class="" aria-hidden="true"><use href="/assets/img/icons.svg#i-close"></use></svg></button>
+  </div>
+  <div class="chat-log" role="log" aria-live="polite"></div>
+  <div class="chat-quick" aria-label="Suggested questions">
+    <button type="button" data-q="What are your hours?">Hours</button>
+    <button type="button" data-q="Where are you located?">Directions</button>
+    <button type="button" data-q="What's on the menu?">Menu</button>
+    <button type="button" data-q="Do you carry feed?">Feed</button>
+    <button type="button" data-q="Tell me about the car show">Car show</button>
+    <button type="button" data-q="How do I contact you?">Contact</button>
+  </div>
+  <form class="chat-form" autocomplete="off">
+    <label class="vh" for="chat-in">Type your question</label>
+    <input id="chat-in" type="text" placeholder="Ask about hours, food, feed..." maxlength="200">
+    <button type="submit" aria-label="Send"><svg class="" aria-hidden="true"><use href="/assets/img/icons.svg#i-send"></use></svg></button>
+  </form>
+</section>
+<dialog class="lightbox" aria-label="Photo viewer">
+  <figure class="lb-fig"><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="lb-btn lb-close" type="button" aria-label="Close"><svg class="" aria-hidden="true"><use href="/assets/img/icons.svg#i-close"></use></svg></button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous photo"><svg class="" aria-hidden="true"><use href="/assets/img/icons.svg#i-chevron-l"></use></svg></button>
+  <button class="lb-btn lb-next" type="button" aria-label="Next photo"><svg class="" aria-hidden="true"><use href="/assets/img/icons.svg#i-chevron-r"></use></svg></button>
+</dialog>
 </body>
 </html>

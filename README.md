@@ -19,7 +19,8 @@ Static, no build step. Deploys to Vercel as-is (`vercel.json` turns on clean URL
 ```
 assets/
   css/styles.css     all styling + design tokens (one file, shared by every page)
-  js/main.js         preloader, mobile menu, photo reveals, on-screen video playback
+  js/main.js         preloader, compact menu, reveals, videos, menu tabs, gallery lightbox, map
+  js/chat.js         "Ask the counter" helper (answers FAQs on the page, no external service)
   fonts/             self-hosted DM Serif Display + Libre Franklin (woff2)
   img/               WebP images in two sizes each (srcset), badge, favicon, paper grain
   video/             compressed muted MP4 loops (load only when scrolled into view)

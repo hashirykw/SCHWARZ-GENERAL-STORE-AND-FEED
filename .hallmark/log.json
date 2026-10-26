@@ -1,3 +1,13 @@
 [
-  { "date": "2026-10-26", "macrostructure": "Photographic", "theme": "custom", "theme_axes": "light / roman-serif / warm", "vibe": "classic mid-century American weekly, small-town Kansas", "enrichment": "none (client photography + video)", "nav": "N6 masthead + sticky bar", "footer": "Ft1 mast-headed", "brief": "Schwarz General & Feed Store + Broken Wheel Scratch Kitchen, Lane KS" }
+  {
+    "date": "2026-10-26",
+    "macrostructure": "Photographic",
+    "theme": "custom",
+    "theme_axes": "light / roman-serif / warm",
+    "vibe": "classic mid-century American weekly, small-town Kansas",
+    "enrichment": "none (client photography + video)",
+    "nav": "N6 masthead + sticky bar",
+    "footer": "Ft1 mast-headed",
+    "brief": "Schwarz General & Feed Store + Broken Wheel Scratch Kitchen, Lane KS \u00b7 v2: mobile-first rewrite, compact menu, chatbot, menu board, cards, gallery"
+  }
 ]
