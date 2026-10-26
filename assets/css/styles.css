@@ -130,6 +130,22 @@ figure { margin: 0; min-width: 0; }
 .fleuron svg { width: 72px; height: 18px; }
 
 /* =========================================================
+   Scrollbars — themed (navy ink on cream paper, barn red on hover)
+   ========================================================= */
+html { scrollbar-color: var(--color-ink) var(--color-paper-2); }
+.chat-log { scrollbar-width: thin; scrollbar-color: var(--color-rule-soft) transparent; }
+/* Safari and older Chromium */
+::-webkit-scrollbar { width: 14px; height: 14px; }
+::-webkit-scrollbar-track { background: var(--color-paper-2); border-left: var(--rule-hair) solid var(--color-rule-soft); }
+::-webkit-scrollbar-thumb { background: var(--color-ink); border: 3px solid var(--color-paper-2); border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-red); }
+::-webkit-scrollbar-thumb:active { background: var(--color-red-deep); }
+::-webkit-scrollbar-corner { background: var(--color-paper-2); }
+.chat-log::-webkit-scrollbar { width: 8px; }
+.chat-log::-webkit-scrollbar-track { background: transparent; border: 0; }
+.chat-log::-webkit-scrollbar-thumb { background: var(--color-rule-soft); border: 2px solid var(--color-card); border-radius: 999px; }
+
+/* =========================================================
    Preloader
    ========================================================= */
 .pl {
