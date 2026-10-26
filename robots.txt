@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://schwarz-general-store-and-feed.nexlyr.solutions/sitemap.xml

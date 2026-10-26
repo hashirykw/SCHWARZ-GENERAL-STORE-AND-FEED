@@ -10,13 +10,13 @@
     doc.classList.add("pl-done");
     try { sessionStorage.setItem("sz-seen", "1"); } catch (e) {}
     var pl = document.querySelector(".pl");
-    if (pl) setTimeout(function () { pl.remove(); }, 800);
+    if (pl) setTimeout(function () { pl.remove(); }, 700);
   }
   if (doc.classList.contains("pl-skip")) {
     var stale = document.querySelector(".pl");
     if (stale) stale.remove();
   } else {
-    var MIN = reduce ? 0 : 950;   // performance.now() counts from navigation start
+    var MIN = reduce ? 0 : 700;   // performance.now() counts from navigation start
     var MAX = 2000;               // never hold the page hostage
     var hero = document.querySelector("[data-hero]");
     var fonts = document.fonts ? document.fonts.ready : Promise.resolve();

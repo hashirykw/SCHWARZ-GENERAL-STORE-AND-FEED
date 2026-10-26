@@ -12,7 +12,6 @@
 @font-face { font-family: "DM Serif Display"; src: url("/assets/fonts/dm-serif-display.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "DM Serif Display"; src: url("/assets/fonts/dm-serif-display-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 @font-face { font-family: "Libre Franklin"; src: url("/assets/fonts/libre-franklin.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
-@font-face { font-family: "Libre Franklin"; src: url("/assets/fonts/libre-franklin-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
 @font-face { font-family: "Serif Fallback"; src: local("Georgia"); size-adjust: 104%; ascent-override: 92%; descent-override: 30%; }
 @font-face { font-family: "Sans Fallback"; src: local("Arial"); size-adjust: 104%; ascent-override: 90%; descent-override: 24%; }
 
@@ -135,7 +134,7 @@ figure { margin: 0; min-width: 0; }
   position: fixed; inset: 0; z-index: 500;
   background-color: var(--color-paper); background-image: url("/assets/img/grain.webp"); background-size: 160px 160px;
   display: grid; place-items: center;
-  transition: transform 700ms var(--ease-in-out), visibility 0s linear 700ms;
+  transition: transform 600ms var(--ease-in-out), visibility 0s linear 600ms;
 }
 .pl-frame { position: absolute; inset: 12px; border: var(--rule-heavy) solid var(--color-rule); outline: var(--rule-hair) solid var(--color-rule); outline-offset: -8px; pointer-events: none; }
 .pl-in { display: grid; justify-items: center; gap: var(--space-4); padding: var(--space-6); text-align: center; }
@@ -143,7 +142,7 @@ figure { margin: 0; min-width: 0; }
 .pl-word { font-family: var(--font-display); font-size: clamp(2.8rem, 12vw, 5.25rem); line-height: 0.9; letter-spacing: -0.015em; animation: pl-rise 600ms var(--ease-out) 120ms both; }
 .pl-sub { color: var(--color-muted); animation: pl-rise 600ms var(--ease-out) 200ms both; }
 .pl-bar { width: min(220px, 60vw); height: var(--rule-heavy); background: var(--color-rule-soft); overflow: hidden; margin-top: var(--space-2); }
-.pl-bar span { display: block; height: 100%; background: var(--color-red); transform-origin: left; transform: scaleX(0); animation: pl-fill 900ms var(--ease-in-out) forwards; }
+.pl-bar span { display: block; height: 100%; background: var(--color-red); transform-origin: left; transform: scaleX(0); animation: pl-fill 700ms var(--ease-in-out) forwards; }
 html.pl-done .pl { transform: translateY(-101%); visibility: hidden; }
 html.pl-skip .pl, html:not(.js) .pl { display: none; }
 @keyframes pl-stamp { from { opacity: 0; transform: scale(1.18) rotate(-8deg); } to { opacity: 1; transform: none; } }
@@ -432,7 +431,7 @@ html:not(.js) .rv { opacity: 1; transform: none; }
 .menu-row .mark { white-space: nowrap; color: var(--color-red-deep); }
 .menu-items p { color: var(--color-muted); font-size: var(--text-sm); margin-top: 4px; max-width: 34rem; }
 .menu-items .special .name { color: var(--color-red-deep); }
-.menu-note { margin-top: var(--space-4); color: var(--color-muted); font-size: var(--text-sm); font-style: italic; }
+.menu-note { margin-top: var(--space-4); color: var(--color-muted); font-size: var(--text-sm); }
 .menu-photo .ph { aspect-ratio: 4 / 5; }
 
 /* =========================================================
@@ -516,7 +515,7 @@ html:not(.js) .rv { opacity: 1; transform: none; }
 .date-block .m { width: 100%; background: var(--color-red); color: var(--color-on-night); padding: 4px 0; }
 .date-block .d { font-family: var(--font-display); font-size: 2.1rem; line-height: 1; padding: 6px 0 2px; }
 .date-block .y { font-size: var(--text-xs); color: var(--color-muted); padding-bottom: 6px; }
-.event-body h3 { font-size: var(--text-2xl); }
+.event-body .ev-title { font-size: var(--text-2xl); }
 .event-body p { color: var(--color-ink-2); }
 .chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 .chip { border: 1px solid var(--color-rule-soft); border-radius: 999px; padding: 6px 12px; font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ink-2); }
@@ -704,6 +703,9 @@ html:not(.js) .rv { opacity: 1; transform: none; }
 .chat-form button { flex: none; width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--color-ink); color: var(--color-paper); display: grid; place-items: center; cursor: pointer; }
 .chat-form button:hover { background: var(--color-red); }
 .chat-form button svg { width: 18px; height: 18px; }
+
+/* skip rendering work for sections that are off screen until they're near */
+main > section:nth-of-type(n+3), .strip, .foot { content-visibility: auto; contain-intrinsic-size: auto 900px; }
 
 /* =========================================================
    Page transitions + reduced motion
